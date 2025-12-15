@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Market Stream Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="top">
+    <div>
+      <div class="title">Real-Time Market Data Stream</div>
+      <div class="sub">Live snapshot with rolling stats</div>
+    </div>
+    <div class="controls">
+      <input id="symbols" type="text" value="AAPL,MSFT,SPY" />
+      <input id="window" type="number" value="60" min="5" max="600" />
+      <button id="apply">Apply</button>
+    </div>
+  </div>
+
+  <div id="cards" class="cards"></div>
+
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>
